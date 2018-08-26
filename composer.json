@@ -1,0 +1,4 @@
+{
+    "name":"Benz12445/testwebboard",
+    "require":{"phpunit/phpunit":"6^"}
+}
