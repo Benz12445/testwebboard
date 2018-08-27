@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900" rel="stylesheet">
+       
+    </head>
+    <body>
+        <div class="container">
+            <form class="regisform" action="register.php" method="POST" >
+            <h1> CREATE ACCOUNT</h1>
+                <br/>
+            <div class="formbox">
+                <h3>User information</h3>
+                </div>
+            <div class="formbox">
+          
+            <label>Username</label> <input type="text" name="usr_usrname" class="txt_input usr_usrname">
+            <label>Password </label><input type="password" name="usr_pass" class="txt_input  usr_pass">
+            
+            </div>
+                
+             <div class="formbox"> <label>Retype Password </label><input name ="usr_pass_retype"type="password" class="txt_input  usr_pass_retype"></div>   
+            
+                
+                
+                
+            <div class="formbox">
+                <h3>Personal information</h3>
+            </div>
+            <div class="formbox">
+          
+            <label>Name</label> <input type="text" name="usr_name" class="txt_input usr_name">
+            <label>Lastname </label><input type="text" name="usr_lastname" class="txt_input  usr_lastname">
+            </div>
+            
+            <div class="formbox">
+            <label>Address </label><input type="text" name="usr_address" class="txt_input usr_address">
+          
+            </div>
+            
+            <div class="formbox">
+            <label>Phone numbers </label><input type="text" name="usr_phone" class="txt_input usr_phone">
+                <label>Email </label><input type="text" name="usr_email" class="txt_input usr_phone">
+            </div>
+            <div class="formbox agreementBox">
+                <label><input type="checkbox" class="txt_checkbox">I agree to terms and conditions</label>
+            </div>
+            <div class="formbox submitbtn">
+                <input type="button" class="btn btn-register" value="Register">
+            </div>
+            </form>
+            
+            
+        </div>
+    
+    
+    </body>
+ <script>
+        //check agreement chkbox before submit the form
+            document.querySelector('.btn-register').onclick = function(){
+                if(!document.querySelector('.txt_checkbox').checked)
+                    {
+                        alert("Please agree to terms and condition first !!!")
+                    }else{
+                        document.querySelector('.regisform').submit()
+                    }
+            }
+            
+        
+        
+        </script>
+
+</html>
+
+

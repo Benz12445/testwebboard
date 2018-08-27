@@ -1,4 +1,14 @@
 {
     "name":"Benz12445/testwebboard",
-    "require":{"phpunit/phpunit":"6^"}
+    
+    "require":{
+        "phpunit/phpunit":"^6",
+        "fzaninotto/faker":"1.8.*"
+              },
+    "autoload":{
+        "classmap":[
+            "vendor/fzaninotto/faker/src/autoload.php",
+            "vendor/phpunit/phpunit/src/Framework/TestCase.php"
+        ]
+    }
 }
