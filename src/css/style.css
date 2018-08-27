@@ -7,17 +7,28 @@
     
     
 }
-body{
+.regis-body{
     background-image:linear-gradient(70deg,#2ecc71,#2980b9);
 }
-.container {
-    padding: 35px;
+.container{
+   
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 35px;
     width:960px;
     color:dimgrey;
-    margin: 30 auto;
+    margin: 0 auto;
     font-size: 18px;
+    
+     
+}
+
+.container-regisform{
+    background-color: white;
+    margin: 30 auto;
     border-radius: 5px;
-     background-color: white;
+    
 }
 
 .container h1{
@@ -87,4 +98,73 @@ label {
 .agreementBox{
     margin-top: 40px;
     text-align: center;
+}
+.nav-header ul{
+    background-color: green;
+}
+.nav-header li{
+    
+    display:inline-block;
+    font-size: 18px;
+    color:gray;
+    padding-right: 15px;
+    list-style: none;
+    text-align: right;
+    float:right;
+    margin-top: 15px;
+    margin-right: 55px;
+    
+    
+}
+
+.nav-header li a, a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.header {
+    
+    color: white;
+    background-color: #2980b9;
+    text-align: center;
+    font-size: 35px;
+    padding: 35;
+    
+}
+
+.topfeed{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+}
+.home-body {
+    background-color: #ecf0f1;
+}
+
+.topfeed-news {
+    
+}
+
+.topfeed-headerTxt {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.topfeed-img {
+    position: relative;
+    float:left;
+    
+}
+
+
+
+.topfeed-txtContent {
+    margin-left:55px;
+    
 }
