@@ -5,6 +5,7 @@ require_once 'src/class/dbconnector.php';
 try{
     $db = new dbconnector('root','');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pass = md5($_POST['usr_pass']);
     $query = "insert into member(
     name,
     lastname,
@@ -31,7 +32,7 @@ try{
     $stmt->bindParam(":email",$_POST['usr_email']);
     $stmt->bindParam(":date_regis",$timenow);
     $stmt->bindParam(":usr_usrname",$_POST['usr_usrname']);
-    $stmt->bindParam(":usr_pass",$_POST['usr_pass']);
+    $stmt->bindParam(":usr_pass",$pass);
     
     
     
