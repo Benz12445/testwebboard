@@ -251,6 +251,29 @@ label {
 }
 
 .forum-btn {
-    margin-top:20px;
-    margin: 0 auo;
+  text-align: center;
+  margin-top:20px;
+    
+    
+}
+
+.btn-createforum {
+    border: 1px solid #bfbfbf;
+    color:#383838;
+    border-radius: 7px;
+    padding:15px;
+    outline:none;
+    
+    background-color:transparent;
+    transition: border 0.2s,color 0.2s,background-color 0.2s;
+}
+
+.btn-createforum:hover {
+    border: 1px solid #2980b9;
+    color:white;
+    border-radius: 7px;
+    padding:15px;
+    outline:none;
+    
+    background-color:#2980b9;
 }

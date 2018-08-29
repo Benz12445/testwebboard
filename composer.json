@@ -8,7 +8,8 @@
     "autoload":{
         "classmap":[
             "vendor/fzaninotto/faker/src/autoload.php",
-            "vendor/phpunit/phpunit/src/Framework/TestCase.php"
+            "vendor/phpunit/phpunit/src/Framework/TestCase.php",
+            "src/class/dbconnector.php"
         ]
     }
 }

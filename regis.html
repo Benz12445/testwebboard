@@ -3,7 +3,40 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="src/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900" rel="stylesheet">
-       
+       <script>
+         
+               document.querySelector('.btn-register').onclick = function(){
+                let isPasswordAndReTypePasswordSame = null;
+                let isAgreementChecked = null;
+                if(document.querySelector('.usr_pass').value != document.querySelector('.usr_pass_retype').value)
+                    {
+                        alert("password is not match")
+                        isPasswordAndReTypePasswordSame = false;
+                    }else{
+                        isPasswordAndReTypePasswordSame = true;
+                    }
+                
+                
+                if(!document.querySelector('.txt_checkbox').checked)
+                    {
+                        alert("Please agree to terms and condition first !!!")
+                        isAgreementChecked = false;
+                    }else{
+                        isAgreementChecked = true;
+                    }
+                if(isPasswordAndReTypePasswordSame && isAgreementChecked){
+                  
+                    document.querySelector('.regisform').submit()
+                   }
+                
+            }
+          
+        //check agreement chkbox before submit the form
+            
+            
+        
+        
+        </script>
     </head>
     <body class="regis-body">
         <div class="container-regisform container">
@@ -56,37 +89,7 @@
     
     
     </body>
- <script>
-        //check agreement chkbox before submit the form
-            document.querySelector('.btn-register').onclick = function(){
-                let isPasswordAndReTypePasswordSame = null;
-                let isAgreementChecked = null;
-                if(document.querySelector('.usr_pass').value != document.querySelector('.usr_pass_retype').value)
-                    {
-                        alert("password is not match")
-                        isPasswordAndReTypePasswordSame = false;
-                    }else{
-                        isPasswordAndReTypePasswordSame = true;
-                    }
-                
-                
-                if(!document.querySelector('.txt_checkbox').checked)
-                    {
-                        alert("Please agree to terms and condition first !!!")
-                        isAgreementChecked = false;
-                    }else{
-                        isAgreementChecked = true;
-                    }
-                if(isPasswordAndReTypePasswordSame && isAgreementChecked){
-                  
-                    document.querySelector('.regisform').submit()
-                   }
-                
-            }
-            
-        
-        
-        </script>
+ 
 
 </html>
 
